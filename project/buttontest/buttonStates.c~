@@ -1,0 +1,11 @@
+#include "led.h"
+#include"switches.h"
+
+void switchstates(){
+
+
+
+
+  led_changed =1;
+  led_update();
+}
