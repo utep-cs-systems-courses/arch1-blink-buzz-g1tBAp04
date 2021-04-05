@@ -1,6 +1,7 @@
 #include <msp430.h>
 #include "switches.h"
 #include "led.h"
+#include "buttonstate.h"
 
 char switch_a_down,switch_b_down,switch_c_down,switch_d_down,switch_state_changed; /* effectively boolean */
 
@@ -35,5 +36,4 @@ switch_interrupt_handler()
   switch_d_down = (p2val & SW4) ? 0 : 1;
   
   switch_state_changed = 1;
-  switchstates();
 }
