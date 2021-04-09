@@ -21,6 +21,8 @@ buttonStates.o: led.h switches.h buttonstate.h
 
 wdInteruptHandler.o:buttonstate.h
 
+buzzer.o:buzzer.h buzzer.c
+
 clean:
 	rm -f *.o *.elf
 
