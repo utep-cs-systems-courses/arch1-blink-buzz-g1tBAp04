@@ -2,7 +2,6 @@
 #include "switches.h"
 #include "buttonstate.h"
 #include <msp430.h>
-#include "switches.h"
 
 void switchstates(){
    static int B1 = 0;
